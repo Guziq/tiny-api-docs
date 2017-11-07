@@ -6,18 +6,18 @@ It’s tiny because it needs just three files to work: the place when you write 
 
 ## Get Started
 
-1. Copy everything to a static directory on your server (e.g. `api/docs`) , so it could serve the `index.html` file.
+1. Copy everything to a static directory on your server (e.g.: `api/docs`) , so it could serve the `index.html` file.
 2. Edit the `content.md` for your own purpose.
 3. Have fun!
 
 ## Features:
 
 * Markdown support (thanks to [marked](https://github.com/chjj/marked)).
-* Clean styling (thanks to [github-markdown-css](https://github.com/sindresorhus/github-markdown-css)).
-* Table of Contents (thanks to [tocbot](https://github.com/tscanlin/tocbot)).
-* Clean column layout (thanks to [Bootstrap](http://getbootstrap.com)).
+* Clean styling (thanks to [github-markdown-css](https://github.com/sindresorhus/github-markdown-css))
+* Table of Contents (thanks to [tocbot](https://github.com/tscanlin/tocbot))
+* Clean column layout (thanks to [Bootstrap](http://getbootstrap.com))
 * Single file edition.
 
 ## Example
 
-![screenshot](/Users/guzik/Documents/tiny-api-docs/screenshot.png)
+![screenshot](screenshot.png)
