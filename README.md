@@ -4,6 +4,8 @@ The **tiny-api-docs** can be used as a lightweight alternative to [Swagger](http
 
 It’s tiny because it needs just three files to work: the place when you write the content (`content.md`), the file with stylings (`github-markdown.css`), and the file that renders your docs (`index.html`).
 
+![screenshot](screenshot.png)
+
 ## Get Started
 
 1. Copy everything to a static directory on your server (e.g.: `api/docs`) , so it could serve the `index.html` file.
@@ -17,7 +19,3 @@ It’s tiny because it needs just three files to work: the place when you write 
 * Table of Contents (thanks to [tocbot](https://github.com/tscanlin/tocbot))
 * Clean column layout (thanks to [Bootstrap](http://getbootstrap.com))
 * Single file edition.
-
-## Example
-
-![screenshot](screenshot.png)
