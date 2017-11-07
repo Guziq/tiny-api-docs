@@ -18,3 +18,6 @@ It’s tiny because it needs just three files to work: the place when you write 
 * Clean column layout (thanks to [Bootstrap](http://getbootstrap.com))
 * Single file edition.
 
+## Example
+
+![screenshot](/Users/guzik/Documents/tiny-api-docs/screenshot.png)
