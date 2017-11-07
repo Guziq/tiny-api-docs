@@ -10,7 +10,7 @@ It’s tiny because it needs just three files to work: the place when you write 
 2. Edit the `content.md` for your own purpose.
 3. Have fun!
 
-## Features:
+## Features
 
 * Markdown support (thanks to [marked](https://github.com/chjj/marked)).
 * Clean styling (thanks to [github-markdown-css](https://github.com/sindresorhus/github-markdown-css))
