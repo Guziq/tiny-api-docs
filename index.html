@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>API docs</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Markdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+    <link rel="stylesheet" href="github-markdown.css"></link>
+
+    <!-- Table of Contents -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.5/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.5/tocbot.css">
+
+  </head>
+  <body>
+    <div class="container" style="margin-top: 64px;">
+      <h1>API <small>docs</small></h1>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="js-toc-content">
+            <div class="markdown-body">
+              <div id="content"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="toc toc-right js-toc" style="position:fixed;"></div>
+        </div>        
+      </div>
+    </div>
+    <script>
+      // Table of Contents
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.js-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.js-toc-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+
+        collapseDepth: 2,
+      });
+
+      // Markdown
+      var client = new XMLHttpRequest();
+      client.open('GET', window.location.href+'content.md');
+      client.onreadystatechange = function() {
+        document.getElementById('content').innerHTML = marked(client.responseText);
+        tocbot.refresh();
+      }
+      client.send();
+    </script>
+  </body>
+</html>
